@@ -293,7 +293,7 @@ a{
 /* acheivement start */
 .achievement-contact{
     background-color: rgb(76, 161, 172);
-    padding: 1% 7%;
+    padding: 1% 6%;
     color: white;
 }
 .achievement-contact::after{
