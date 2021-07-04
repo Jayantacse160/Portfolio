@@ -1,0 +1,77 @@
+/* css for desktop */
+.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;}
+
+.nav-logo{
+    
+}
+
+.nav-heading h1{
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.nav-menu a{
+    padding: 5px 10px;
+    margin: 20px 0;
+    background-color: transparent;
+}
+
+/* profile description start*/
+
+.profile-des p{
+    color:gray;
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+/* profile description end*/
+
+/* about me */
+.about-image{
+    margin-top: 100px;
+}
+.about-image img{
+    width: 350px;
+    height: 350px;
+}
+.about-des p{
+    text-align: left;
+}
+/* about end  */
+
+/* achievement start */
+.contact-form button{
+    width: 150px;
+}
+.contact-more{
+    position: relative;
+    padding-left: 15px;
+}
+
+.contact-more .media-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 200px;
+}
+
+
+/* achievement end */

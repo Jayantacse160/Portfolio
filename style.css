@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+    
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.25rem;
+    text-align: center;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+/* navbar start */
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+/* css for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+/* nabvar start */
+.navbar::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.navbar{
+    background-color: rgb(53, 124, 53);
+    padding:10px 15px;
+    text-align: center;
+}
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top:10px;
+    font-size: 2rem;
+    
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a{
+    background-color: rgb(16, 36, 16);
+    padding: 10px;
+    margin: 7px 0;
+    border-radius: 10px;
+}
+.nav-menu a:hover{
+    background-color: black;
+}
+
+/* navbar end */
+
+/* profile description start */
+.profile{
+    text-align: center;
+    position: relative;
+    padding:130px 15px ;
+}
+
+.profile .top-icon{
+   position: absolute;
+   top: 10px;
+   right: 50px;
+   transition: transform 2s;
+}
+.profile .top-icon:hover{
+   transform: rotate(360deg);
+}
+
+.profile .bottom-icon{
+    position: absolute;
+    bottom:10px;
+    left:50px;
+    transition: transform 2s;
+ }
+ .profile .bottom-icon:hover{
+    transform: rotate(360deg);
+ }
+
+ .profile-des h1{
+    font-family: 'Satisfy', cursive;
+ }
+ .profile-des p{
+     color:gray;
+     text-align: center;
+     width: 90%;
+     margin: 0 auto 20px auto;
+     text-align: center;
+ }
+
+.profile::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* profile description end*/
+
+/* about us atrat */
+.about-us{
+    text-align: center;
+    background-color: rgb(99, 99, 240);
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+}
+.about-us::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.com-hr{
+    border: 5px dotted white;
+    border-bottom: none;
+    width: 30px;
+}
+.about-image img{
+    border:1px solid white;
+    border-radius: 5px;
+}
+.about-us p{
+    text-align: center;
+}
+
+.cv-button{
+    background-color: rgb(167, 69, 69);
+    color: white;
+    padding: 15px;
+    font: 1rem;
+    border:none;
+    cursor: pointer;
+    margin: 10px;
+}
+/* about us end */
+
+/* work expre start */
+.work-experience{
+    padding:2% 3%;
+}
+
+.work-experience::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.work-experience .card{
+    background-color: rgb(133, 132, 132);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:5px;
+    height: 530px;
+}
+.work-experience .card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.card-image{
+    text-align: center;
+}
+.card-image img{
+    border-radius: 50%;
+    border: 2px solid rgb(53, 37, 37);
+    padding: 15px;
+    width: 100px;
+    margin-top:8px;
+}
+
+.card-image .skill-img{
+     width: 100px;
+     height: 100px;
+
+}
+.card-title h2{
+    text-align: center;
+    background-color:rgb(66, 66, 66);
+    padding: 7px;
+
+}
+.skill-container{
+    padding:10px;
+}
+.skill-container li{
+    list-style-type: none;
+    margin:30px 5px;
+    font-weight: bolder;
+    position: relative;
+    text-transform: uppercase;
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    background-color:blue;
+    opacity: .3;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 100px;
+}
+.skill-container  li::after{
+    content: '';
+    position: absolute;
+    background-color:blue;
+    opacity: .8;
+    top: calc(100% + 5px);
+    left:0;
+    width: 0;
+    height: 10px;
+    border-radius: 100px;
+    
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+
+}
+
+.skill-container li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width:90%;
+    }
+}
+
+.skill-container li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width:80%;
+    }
+}
+
+.skill-container li.wordpress::after{
+    animation-name: wordpress;
+}
+
+@keyframes wordpress{
+    to{
+        width:90%;
+    }
+}
+
+.skill-container li.bootstrap::after{
+    animation-name:bootstrap ;
+}
+
+@keyframes bootstrap{
+    to{
+        width:75%;
+    }
+}
+
+.skill-container li.java::after{
+    animation-name: java;
+}
+
+@keyframes java{
+    to{
+        width:60%;
+    }
+}
+
+/* work expe end */
+
+/* acheivement start */
+.achievement-contact{
+    background-color: rgb(76, 161, 172);
+    padding: 1% 7%;
+    color: white;
+}
+.achievement-contact::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+.contact-form{
+  color: white;
+  text-align: center; 
+}
+form input,textarea{
+   padding: 10px;
+   border-radius: 5px;
+   border: none;
+   resize: none;
+   width: 100%;
+   margin: 10px;
+}
+
+.contact-form button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(170, 76, 96);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+}
+
+.contact-more{
+    text-align: center;
+    padding: 1% 7%;
+}
+.contact-more .btn{
+   border: none;
+   border-radius: 10px;
+   font-size: 32px;
+   cursor: pointer;
+   padding: 5px;
+   width: 50px;
+   margin: 10px;
+}
+.contact-more .btn:hover{
+    background-color: grey;
+}
+
+/* achievement end */
+
+/* footer start */
+.footer{
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+}
+.footer-menu a{
+    margin: 10px;
+}
+.footer-menu a:hover{
+    color: gray;
+}
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.footer-des{
+    color: white;
+}
+/* footer end */
